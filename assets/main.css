@@ -31,7 +31,7 @@ body {
       box-sizing: border-box;
       display: inline-block;
       text-align: center;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       width: 25%; }
       .header .contacts-item-link {
         color: #000 !important;
@@ -42,7 +42,7 @@ body {
         text-decoration: none; }
       .header .contacts-item i {
         margin-right: 5px;
-        font-size: 0.8rem; }
+        font-size: 0.9rem; }
 
 .content {
   padding: 20px;
@@ -56,7 +56,7 @@ body {
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     width: 50%; }
   .content .section {
     padding: 0 0 20px 0; }
@@ -64,8 +64,8 @@ body {
     padding: 0 0 30px 0; }
   .content h2 {
     font-weight: normal;
-    margin: 0 0 10px 0;
-    font-size: 1.2rem; }
+    margin: 0 0 15px 0;
+    font-size: 1.3rem; }
   .content .education-item {
     padding: 0 0 10px 0;
     position: relative; }
@@ -90,7 +90,7 @@ body {
   .content .achievement, .content .skill {
     border-left: solid 2px #ccc;
     padding-bottom: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding-left: 5px; }
     .content .achievement span, .content .skill span {
       font-weight: 600; }
