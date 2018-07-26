@@ -8,7 +8,7 @@
     text-decoration: none
 
   .column
-    padding: 20px 0 0 20px
+    padding: 16px 0 0 16px
     box-sizing: border-box
     display: inline-block
     vertical-align: top
@@ -66,11 +66,15 @@
     color: #333
 
   .work-item
-    margin-bottom: 20px
+    margin-bottom: 15px
     .name
       background-color: #eee
       font-weight: bold
       padding: 5px
+      span
+        font-weight: normal
+        float: right
+        color: #666
     .description
       padding: 5px
       span
@@ -80,6 +84,8 @@
         li:not(:last-child)
           margin-bottom: 4px
         li
+          &.secondary
+            color: #444
           position: relative
           padding-left: 3px
           display: block

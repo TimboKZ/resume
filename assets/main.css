@@ -1,132 +1,177 @@
 @page {
   size: 21cm 29.7cm;
-  margin: 0 0 0 0; }
+  margin: 0 0 0 0;
+}
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+}
 
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 .header {
-  padding: 70px 60px 50px 60px;
-  background-color: #eee; }
-  .header .icon, .header .name {
-    vertical-align: middle;
-    display: inline-block; }
-  .header .icon {
-    margin: 0 20px 0 0;
-    width: 60px; }
-    .header .icon img {
-      max-width: 100%; }
-  .header .name {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: normal;
-    line-height: 1.8rem;
-    font-size: 2.4rem; }
-  .header .contacts {
-    font-size: 0; }
-    .header .contacts-item {
-      padding: 15px 0 15px 15px;
-      box-sizing: border-box;
-      display: inline-block;
-      text-align: center;
-      font-size: 0.8rem;
-      width: 25%; }
-      .header .contacts-item-link {
-        color: #000 !important;
-        text-decoration: none; }
-      .header .contacts-item span {
-        border-bottom: solid 1px rgba(66, 74, 185, 0.31);
-        color: #303682 !important;
-        text-decoration: none; }
-      .header .contacts-item i {
-        margin-right: 5px;
-        font-size: 0.9rem; }
+  padding: 40px 30px 20px 30px;
+  background-color: #eee;
+}
+.header .icon, .header .name {
+  vertical-align: middle;
+  display: inline-block;
+}
+.header .icon {
+  margin: 0 20px 0 0;
+  width: 60px;
+}
+.header .icon img {
+  max-width: 100%;
+}
+.header .name {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  line-height: 1.8rem;
+  font-size: 2.4rem;
+}
+.header .contacts {
+  font-size: 0;
+}
+.header .contacts-item {
+  padding: 15px 0 15px 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 25%;
+}
+.header .contacts-item-link {
+  color: #000 !important;
+  text-decoration: none;
+}
+.header .contacts-item span {
+  border-bottom: solid 1px rgba(66, 74, 185, 0.31);
+  color: #303682 !important;
+  text-decoration: none;
+}
+.header .contacts-item i {
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
 
 .content {
   padding: 20px;
-  font-size: 0; }
-  .content a {
-    border-bottom: solid 1px rgba(66, 74, 185, 0.31);
-    color: #303682 !important;
-    text-decoration: none; }
-  .content .column {
-    padding: 20px 0 0 20px;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 0.8rem;
-    width: 50%; }
-  .content .section {
-    padding: 0 0 20px 0; }
-  .content .column-1 .section {
-    padding: 0 0 30px 0; }
-  .content h2 {
-    font-weight: normal;
-    margin: 0 0 15px 0;
-    font-size: 1.3rem; }
-  .content .education-item {
-    padding: 0 0 10px 0;
-    position: relative; }
-    .content .education-item .year, .content .education-item .institution {
-      vertical-align: top; }
-    .content .education-item .year {
-      background-color: #eee;
-      display: inline-block;
-      margin-right: 3px;
-      padding: 2px 5px; }
-    .content .education-item .institution {
-      display: inline-block;
-      line-height: 1rem;
-      padding: 2px 5px; }
-      .content .education-item .institution .name {
-        font-weight: bold; }
-      .content .education-item .institution .info span {
-        padding-left: 5px;
-        color: #999; }
-      .content .education-item .institution .grade {
-        font-style: italic; }
-  .content .achievement, .content .skill {
-    border-left: solid 2px #ccc;
-    padding-bottom: 2px;
-    margin-bottom: 15px;
-    padding-left: 5px; }
-    .content .achievement span, .content .skill span {
-      font-weight: 600; }
-  .content .work-ellipsis {
-    border: solid 1px #eee;
-    font-style: italic;
-    text-align: center;
-    padding: 5px;
-    color: #333; }
-  .content .work-item {
-    margin-bottom: 20px; }
-    .content .work-item .name {
-      background-color: #eee;
-      font-weight: bold;
-      padding: 5px; }
-    .content .work-item .description {
-      padding: 5px; }
-      .content .work-item .description span {
-        font-weight: 600; }
-      .content .work-item .description ul {
-        list-style: none; }
-        .content .work-item .description ul li:not(:last-child) {
-          margin-bottom: 4px; }
-        .content .work-item .description ul li {
-          position: relative;
-          padding-left: 3px;
-          display: block; }
-          .content .work-item .description ul li:before {
-            border-color: #ddd #ddd transparent transparent;
-            transform: rotate(45deg);
-            border-radius: 10px;
-            border-style: solid;
-            border-width: 3px;
-            position: absolute;
-            content: "";
-            left: -8px;
-            top: 5px; }
+  font-size: 0;
+}
+.content a {
+  border-bottom: solid 1px rgba(66, 74, 185, 0.31);
+  color: #303682 !important;
+  text-decoration: none;
+}
+.content .column {
+  padding: 16px 0 0 16px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.8rem;
+  width: 50%;
+}
+.content .section {
+  padding: 0 0 20px 0;
+}
+.content .column-1 .section {
+  padding: 0 0 30px 0;
+}
+.content h2 {
+  font-weight: normal;
+  margin: 0 0 15px 0;
+  font-size: 1.3rem;
+}
+.content .education-item {
+  padding: 0 0 10px 0;
+  position: relative;
+}
+.content .education-item .year, .content .education-item .institution {
+  vertical-align: top;
+}
+.content .education-item .year {
+  background-color: #eee;
+  display: inline-block;
+  margin-right: 3px;
+  padding: 2px 5px;
+}
+.content .education-item .institution {
+  display: inline-block;
+  line-height: 1rem;
+  padding: 2px 5px;
+}
+.content .education-item .institution .name {
+  font-weight: bold;
+}
+.content .education-item .institution .info span {
+  padding-left: 5px;
+  color: #999;
+}
+.content .education-item .institution .grade {
+  font-style: italic;
+}
+.content .achievement, .content .skill {
+  border-left: solid 2px #ccc;
+  padding-bottom: 2px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+.content .achievement span, .content .skill span {
+  font-weight: 600;
+}
+.content .work-ellipsis {
+  border: solid 1px #eee;
+  font-style: italic;
+  text-align: center;
+  padding: 5px;
+  color: #333;
+}
+.content .work-item {
+  margin-bottom: 15px;
+}
+.content .work-item .name {
+  background-color: #eee;
+  font-weight: bold;
+  padding: 5px;
+}
+.content .work-item .name span {
+  font-weight: normal;
+  float: right;
+  color: #666;
+}
+.content .work-item .description {
+  padding: 5px;
+}
+.content .work-item .description span {
+  font-weight: 600;
+}
+.content .work-item .description ul {
+  list-style: none;
+}
+.content .work-item .description ul li:not(:last-child) {
+  margin-bottom: 4px;
+}
+.content .work-item .description ul li {
+  position: relative;
+  padding-left: 3px;
+  display: block;
+}
+.content .work-item .description ul li.secondary {
+  color: #444;
+}
+.content .work-item .description ul li:before {
+  border-color: #ddd #ddd transparent transparent;
+  transform: rotate(45deg);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: 5px;
+}
 
 /*# sourceMappingURL=main.css.map */
