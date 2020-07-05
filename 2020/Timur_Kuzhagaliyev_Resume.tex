@@ -1,0 +1,110 @@
+\documentclass{article}
+
+\usepackage[a4paper, total={7in, 10.5in}]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[compact]{titlesec}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+%% Custom font
+%\def\rmdefault{bch}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+
+%% Custom colors
+\definecolor{SectionText}{rgb}{0.5,0.5,0.8}
+\definecolor{CompanyLocationText}{rgb}{0.5,0.5,0.5}
+\definecolor{RoleBackground}{rgb}{0.9,0.9,0.9}
+\definecolor{SubtleText}{rgb}{0.6,0.6,0.6}
+
+
+%% Section title customization
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{SectionText}}{\thesection}{1em}{}[{\titlerule[1pt]}]
+\titleformat{\subsection}
+  {\setstretch{1.1}\normalfont\normalsize\bfseries}{\thesection}{1em}{}  
+
+%% Section title margins
+\titlespacing*{\subsection} {0pt}{2.25ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+
+%% Custom itemize
+\setlist{itemsep=1pt,topsep=1pt,partopsep=1pt}
+\newlist{specialitemize}{itemize}{3}
+\setlist[specialitemize,1]{label=\textbullet,leftmargin=1em,rightmargin=2em}
+\setlist[specialitemize,2]{label=\textbullet,leftmargin=1em,rightmargin=0.5em}
+
+%% Link colours
+\hypersetup{
+colorlinks,
+linkcolor=blue,
+urlcolor=blue,
+}
+
+%% Remove page numbers
+\pagenumbering{gobble}
+
+\begin{document}
+
+\subsubsection*{{\Huge Timur Kuzhagaliyev} \hfill \href{https://github.com/TimboKZ}{github.com/TimboKZ} \\ tim.kuzh@gmail.com \hfill Python, Typescript, C++ \\ +44 7393 838116}
+
+\section*{Education}
+
+\subsection*{University College London \textcolor{SubtleText}{\normalfont (UCL)} \hfill \textcolor{CompanyLocationText}{London, UK} \\ \colorbox{RoleBackground}{Master of Engineering, Computer Science} \hfill September 2015 - June 2019}
+
+\textbf{GPA: 82\%}, Machine Learning track including machine vision, graphical models, deep \& reinforcement learning.
+
+\subsection*{California Institute of Technology \textcolor{SubtleText}{\normalfont (Caltech)} \hfill \textcolor{CompanyLocationText}{Pasadena, California, USA} \\ \colorbox{RoleBackground}{Exchange Student, Computer Science} \hfill September 2017 - June 2018}
+
+\textbf{GPA: 3.8}, Numerical Algorithms track including applied linear algebra, information theory, game theory.
+
+\section*{Work Experience}
+
+\subsection*{Amazon \hfill \textcolor{CompanyLocationText}{London, UK} \\ \colorbox{RoleBackground}{Software Development Engineer} \hfill September 2019 - Present}
+
+\begin{specialitemize}
+    \item \textcolor{SubtleText}{(Dec 2019 - Present)} As a member of the Video Quality Analysis team at Prime Video:
+    
+    \begin{specialitemize}
+    	\item Worked on debugging and optimizing machine learning and deep learning algorithms. Designed DevOps and MLOps pipelines.  Used \textbf{Python}, \textbf{OpenCV}, \textbf{MXNet}, and various \textbf{AWS} services.
+        \item Decreased analysis algorithm latency from 4x to 2x the video duration on average by replacing expensive OCR service calls with a custom convolutional neural network trained for algorithm's needs.
+        \item Increased video analysis system throughput from 10s to 100s of parallel analysis jobs by leading the design and implementation of a new serverless backend.
+        %\item Decreased the number of bugs and crashes in production by educating peers on static typing in Python and adding linters and type checkers to CI/CD pipelines.
+    \end{specialitemize}
+    
+    \item \textcolor{SubtleText}{(Sep 2019 - Dec 2019)} As a member of the Living Room Client team at Prime Video:
+    
+    \begin{specialitemize}
+    	\item Worked on improving the frontend for the Prime Video TV app. Used \textbf{Typescript} and \textbf{React} with \textbf{Redux}.
+        \item Introduced pointer control support to Prime Video TV app, which was initially designed to only support D-pad, by revamping how component focus and section transition animations were handled.
+        \item Improved animation performance in edge cases from 5fps to 30fps by optimizing React updates.
+        %\item Improved overall performance of the application by educating peers with Java background on the inner workings of React and relevant optimization techniques.
+    \end{specialitemize}
+\end{specialitemize}
+
+\subsection*{Amazon Lab126 \hfill \textcolor{CompanyLocationText}{Cambridge, UK} \\ \colorbox{RoleBackground}{Software Development Intern} \hfill June 2018 - September 2018}
+
+\begin{specialitemize}
+	\item As a member of the Camera team in the Hardware \& Architecture department:
+    \begin{specialitemize}
+	    \item Developed a tool for real-time relighting of poorly-lit images based on sparse depth maps using \textbf{C++}, \textbf{OpenCV} and \textbf{Godot}. The tool showed promising results and was picked up for further productization.
+        \item Considerably sped up team's depth map analysis and 3D simulation efforts by rewriting the in-house 3D engine as a plugin for the Godot game engine with a custom C++ backend.
+    \end{specialitemize}
+\end{specialitemize}
+
+\subsection*{UCL Surgical Robot Vision group \hfill \textcolor{CompanyLocationText}{London, UK} \\ \colorbox{RoleBackground}{Research Intern} \hfill July 2017 - September 2017}
+
+\begin{specialitemize}
+	\item Developed the first openly documented Microsoft HoloLens system for overlaying holograms over surgical tools, using infrared markers and external IR trackers. Used \textbf{C\#} for HoloLens and \textbf{Python} for backend.
+	\item Published \href{https://arxiv.org/abs/1802.03274}{a paper} that was accepted for oral presentation at the 2018 SPIE Medical Imaging Conference, and has since been cited 15 times, putting it into top 25\% cited papers.
+\end{specialitemize}
+
+\subsection*{Microsoft, UCL Institute of Child Health \hfill \textcolor{CompanyLocationText}{London, UK} \\ \colorbox{RoleBackground}{Intern Team Lead} \hfill June 2017 - August 2017}
+
+\begin{specialitemize}
+	\item Supervised a team of interns developing a system for \href{https://fizzyo.github.io/}{Project Fizzyo}, used for analysis of cystic fibrosis patient data. Fizzyo has since won several awards and produced over 10 papers (incl. a paper for NeurIPS).
+	\item Personally developed a frontend-agnostic API backend using \textbf{Node.js}, \textbf{Express.js} and \textbf{PostgreSQL}. The backend is used to this day with minimal changes, collecting anonymised data from over 160 child patients.
+\end{specialitemize}
+
+\end{document}
+`
